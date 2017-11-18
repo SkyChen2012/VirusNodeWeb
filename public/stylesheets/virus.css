@@ -1,0 +1,19 @@
+
+a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.m15{
+    margin: 15px;
+}
+.tc{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
