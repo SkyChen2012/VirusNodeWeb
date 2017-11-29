@@ -39,19 +39,20 @@ router.route("/login").get(function(req,res){    // 到达此路径则渲染logi
 /* GET register page. */
 router.route("/register").get(function(req,res){    // 到达此路径则渲染register文件，并传出title值供 register.html使用
 	res.render("register",{title:'User register'});
+
 }).post(function(req,res){ 
 	 //这里的User就是从model中获取user对象，通过global.dbHandel全局方法（这个方法在app.js中已经实现)
 	var User = global.dbHandel.getModel('user');
 	var uname = req.body.uname;
 	var upwd = req.body.upwd;
 	User.findOne({name: uname},function(err,doc){   // 同理 /login 路径的处理方式
-		if(err){ 
+		if(err){
 			res.send(500);
 			req.session.error =  '网络异常错误！';
 			console.log(err);
-		}else if(doc){ 
+		}else if(doc){
 			req.session.error = '用户名已存在！';
-			res.send(500);
+            res.send("用户名已存在!");
 		}else{ 
 			User.create({ 							// 创建一组user对象置入model
 				name: uname,
