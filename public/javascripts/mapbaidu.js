@@ -1,12 +1,12 @@
 
 //获取所有点的坐标
 var points = [
-    new BMap.Point(114.00100, 22.550000), new BMap.Point(114.00130, 22.550000),
-    new BMap.Point(114.00160, 22.550000), new BMap.Point(114.00200, 22.550000),
-    new BMap.Point(114.00300, 22.550500), new BMap.Point(114.00400, 22.550000),
-    new BMap.Point(114.00500, 22.550000), new BMap.Point(114.00505, 22.549800),
-    new BMap.Point(114.00510, 22.550000), new BMap.Point(114.00515, 22.550000),
-    new BMap.Point(114.00525, 22.550400), new BMap.Point(114.00537, 22.549500)
+    new BMap.Point(114.00100, 22.550000), new BMap.Point(124.00130, 22.550000),
+    new BMap.Point(124.00160, 25.550000), new BMap.Point(114.00200, 22.550000),
+    new BMap.Point(114.00300, 22.550500), new BMap.Point(134.00400, 22.550000),
+    new BMap.Point(114.00500, 24.550000), new BMap.Point(114.00505, 22.549800),
+    new BMap.Point(114.00510, 22.550000), new BMap.Point(144.00515, 22.550000),
+    new BMap.Point(114.00525, 23.550400), new BMap.Point(114.00537, 22.549500)
 ];
 
 var map;   //百度地图对象
