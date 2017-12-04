@@ -90,4 +90,21 @@ router.get("/logout",function(req,res){    // 到达 /logout 路径则登出， 
 	res.redirect("/");
 });
 
+
+//这里就是接受form表单请求的接口路径，请求方式为post。
+router.post('/upload',function (req,res) {
+    //这里打印可以看到接收到文件的信息。
+    console.log(req.files);
+    /*//do something
+    * 成功接受到浏览器传来的文件。我们可以在这里写对文件的一系列操作。例如重命名，修改文件储存路径 。等等。
+    *
+    *
+    * */
+
+    //给浏览器返回一个成功提示。
+    res.send('upload success!');
+});
+
+
+
 module.exports = router;
