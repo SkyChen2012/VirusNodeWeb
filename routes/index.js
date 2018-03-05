@@ -106,5 +106,10 @@ router.post('/upload',function (req,res) {
 });
 
 
+router.get('/honyar', function(req, res,next) {
+  res.send('{"employees":[{"mac":"11:11:11:11:11","type":"short model/型号","Version":"固件版本"},{"mac":"11:11:11:11:12","type":"short model/型号","Version":"固件版本"},{"mac":"11:11:11:11:13","type":"short model/型号","Version":"固件版本"}]}');    // 到达此路径则渲染index文件，并传出title值供 index.html使用
+});
+
+
 
 module.exports = router;
